@@ -12,7 +12,7 @@ with app.app_context():
     Newsletter.query.delete()
 
     newsletters = []
-    for i in range(50):
+    for i in range(1000):
         newsletter = Newsletter(
             title = fake.text(max_nb_chars=20),
             body = fake.paragraph(nb_sentences=5),
